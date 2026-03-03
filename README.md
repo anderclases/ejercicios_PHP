@@ -11,6 +11,9 @@ echo "Hola mundo estoy aprendiendo PHP.";
 ?>
 ```
 
+**Modificaciones:**
+Modifica el código para que haya una variable y para que el echo la imprima, el texto de la variable que se imprime tiene que ser en negrita.
+
 
 ## Ejercicio 2
 Crea un programa que pida al usuario su nombre y lo imprima en pantalla.
@@ -35,6 +38,10 @@ Crea un programa que pida al usuario su nombre y lo imprima en pantalla.
 </body>
 </html>
 ```
+
+**Modificaciones:**
+Haz que el formulario pida también el apellido cambia la forma de comunicación a POST
+
 
 ## Ejercicio 3 
 
@@ -62,6 +69,9 @@ Crea un programa que pida al usuario su nombre y lo imprima en pantalla.
 </body>
 </html>
 ```
+
+**Modificaciones:**
+Haz que se pueda meter un tercer número, meter ese número es opcional (La web tiene que funcionar este o no informado), este en vez de sumar resta al cáculo.
 
 ## Ejercicio 4
 
@@ -91,7 +101,14 @@ Crea un programa que pida al usuario su nombre y lo imprima en pantalla.
 </html>
 ```
 
+**Modificaciones:**
+Haz que el texto que informa que es **par** sea **verde**.
+El texto que informa que es **impar** tiene que ser **rojo**.
+
+
 ## Ejercicio 5
+
+Siguiente....
 
 ```php
 ```
