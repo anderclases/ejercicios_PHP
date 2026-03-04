@@ -1,6 +1,8 @@
 # ejercicios_PHP
 Ejercicios para practicar PHP desde principiantes hasta acabar con un nivel avanzado
 
+Cada una de las páginas que hagamos tienen que tener como <title> el número de ejercicio.
+
 
 ## Ejercicio 1
 Crea un programa que imprima en pantalla la siguiente frase: Hola mundo estoy aprendiendo PHP.
@@ -11,7 +13,7 @@ echo "Hola mundo estoy aprendiendo PHP.";
 ?>
 ```
 
-**Modificaciones:**
+### Modificaciones: 
 Modifica el código para que haya una variable y para que el echo la imprima, el texto de la variable que se imprime tiene que ser en negrita.
 
 
@@ -39,7 +41,7 @@ Crea un programa que pida al usuario su nombre y lo imprima en pantalla.
 </html>
 ```
 
-**Modificaciones:**
+### Modificaciones: 
 Haz que el formulario pida también el apellido cambia la forma de comunicación a POST
 
 
@@ -70,7 +72,7 @@ Haz que el formulario pida también el apellido cambia la forma de comunicación
 </html>
 ```
 
-**Modificaciones:**
+### Modificaciones: 
 Haz que se pueda meter un tercer número, meter ese número es opcional (La web tiene que funcionar este o no informado), este en vez de sumar resta al cáculo.
 
 ## Ejercicio 4
@@ -101,17 +103,54 @@ Haz que se pueda meter un tercer número, meter ese número es opcional (La web 
 </html>
 ```
 
-**Modificaciones:**
-Haz que el texto que informa que es **par** sea **verde**.
-El texto que informa que es **impar** tiene que ser **rojo**.
+### Modificaciones: 
+- Haz que el texto que informa que es **par** sea **verde**.
+- El texto que informa que es **impar** tiene que ser **rojo**.
 
 
 ## Ejercicio 5
+
+Crea un programa que imprima el día de la semana al seleccionar una fecha.
+
+```php
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <form action="" method="get">
+        <input type="date" name="fecha" placeholder="Introduce una fecha">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <?php
+    if (isset($_GET["fecha"])) {
+        $fecha = $_GET["fecha"];
+		setlocale(LC_TIME, "spanish");
+		$dia = strftime("%A", strtotime($fecha));
+        echo "El día de la semana es " . $dia;
+    }
+    ?>
+</body>
+</html>
+```
+### Modificaciones: 
+Analiza las funciones y explica que hace cada una de ellas:
+- `setlocale(LC_TIME, "spanish")` 
+- `strftime("%A", strtotime($fecha))`.
+
+Además de mostrar el día de la semana muestra el día del mes.
+
+
+## Ejercicio X
 
 Siguiente....
 
 ```php
 ```
+### Modificaciones: 
+texto...
 
 Fuentes: 
 - https://vaidrollteam.blogspot.com/2023/10/20-ejercicios-basicos-de-php-1.html#google_vignette
