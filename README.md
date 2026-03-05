@@ -142,6 +142,10 @@ Analiza las funciones y explica que hace cada una de ellas:
 
 Además de mostrar el día de la semana muestra el día del mes.
 
+¿Que significa que una función esté deprecated?
+
+Encuentra una alternativa que funcione para este código.
+
 
 ## Ejercicio X
 
